@@ -1,6 +1,6 @@
 mon = peripheral.find("monitor") -- Monitor
 me = nil
-
+print("Shall we sail the seven seas, landlubber?")
 local function findMeBridge()
   while me == nil do
     print("Yarr, matey, I can't feind me bridge yet!")
@@ -11,6 +11,7 @@ local function findMeBridge()
 end
 
 local function run()
+  print("Set sail! We be off to find booty!")
   if me == nil then
     error("Shiver me timbers! Our ship be bridgeless!")
     error("Stop runnin' a rig on me, ye scallywag! Yer network be broken! Ye need a bridge!")
@@ -89,6 +90,7 @@ local function run()
   end
 
   function updateStats()
+    print("Scouring the seas for loot!")
     clear(3,monX - 3,monY - 5,monY - 2)
     print("CPUs: ".. data.cpus)
     print("busy: ".. data.crafting)
